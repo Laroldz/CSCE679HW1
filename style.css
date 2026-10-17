@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* Tooltip: hidden by default, positioned near the mouse in main.js */
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Max/min toggle */
+.mode-toggle {
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Heatmap cells: outline the hovered one */
+.cell {
+  stroke: none;
+}
+.cell:hover {
+  stroke: #333;
+  stroke-width: 2px;
+}
+
+/* Level 2 mini line charts. pointer-events: none lets the mouse reach the cell underneath for the tooltip. */
+.mini-chart path {
+  fill: none;
+  stroke-width: 1.5px;
+  pointer-events: none;
+}
+.max-line {
+  stroke: #2ca02c;
+}
+.min-line {
+  stroke: #6baed6;
+}
+
+.legend-title {
+  font-size: 12px;
+  font-weight: bold;
+}

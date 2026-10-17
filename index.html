@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HK Temperature Heatmap</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- D3.js loaded from a CDN, no install needed -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <h1>Hong Kong Monthly Temperature</h1>
+
+  <!-- Controls (e.g. a button to switch between max and min temperature) -->
+  <div id="controls"></div>
+
+  <!-- The heatmap SVG is drawn into this container -->
+  <div id="chart"></div>
+
+  <!-- Level 2: last 10 years, with a mini line chart of daily temperatures in each cell -->
+  <h2>Level 2: Daily Temperature (Last 10 Years)</h2>
+  <div id="controls2"></div>
+  <div id="chart2"></div>
+
+  <!-- Tooltip shown when hovering over a cell -->
+  <div id="tooltip" class="tooltip"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
